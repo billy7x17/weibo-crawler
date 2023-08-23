@@ -1,22 +1,25 @@
 {
-    "user_id_list": "user_id_list.txt",
+    "user_id_list": ["2028810631"],
+    "user_id_list_test": ["2348547533"],
+    "query_bak": ["偷拍","性侵","旅行安全","网约车安全","出行安全","租房安全"],
+    "query_list": ["女性 偷拍"],
     "only_crawl_original": 0,
-    "since_date": 1,
+    "since_date": "2018-01-01",
     "start_page": 1,
     "write_mode": [
-        "csv"
+        "sqlite"
     ],
-    "original_pic_download": 1,
+    "original_pic_download": 0,
     "retweet_pic_download": 0,
-    "original_video_download": 1,
+    "original_video_download": 0,
     "retweet_video_download": 0,
     "download_comment": 1,
-    "comment_max_download_count": 100,
+    "comment_max_download_count": 10000000000,
     "download_repost": 1,
-    "repost_max_download_count": 100,
+    "repost_max_download_count": 10000000000,
     "user_id_as_folder_name": 0,
     "remove_html_tag": 1,
-    "cookie": "your cookie",
+    "cookie": "XSRF-TOKEN=72HcruvLEuGavXGf9unjlQ84; SSOLoginState=1692193567; _s_tentry=-; Apache=6380286754087.31.1692194379262; SINAGLOBAL=6380286754087.31.1692194379262; ULV=1692194379597:1:1:1:6380286754087.31.1692194379262:; UOR=,,www.baidu.com; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WFTCd4I0fpZ0LO5nChS690G5JpX5KMhUgL.FozXeo.ceh2feKz2dJLoI7LFIgpjwKUReKMt; ALF=1695271729; SCF=AhnMILIZ8tpzfNl2I4fbW7KuGoxEE9LjtqyhZuU1Edf6PFXayF6rvm_XGaxG9C1Ctoqxhy6MSpy2VoyorWaowYE.; SUB=_2A25J4E5oDeRhGeRK6VsX8C_Jyj6IHXVqlDigrDV8PUNbmtANLW34kW9NU2mHoSNVdHm-Cc5d1oUG1A7W7nTwTeVn; WBPSESS=kozktML9XOtj0RpNAceg9U81OSP-6erF_0IjL8ZLb5GuJqppRnk_MQLuOC-FMoSoa2TkcvR1aLIgaG3YuIE6RfstlmVrx623Vc9V1z7cqOVm16E1zTSFZw1jVla9bHfp0i3brzwvC1z7NSnPH0iE_A==; ariaDefaultTheme=undefined",
     "mysql_config": {
         "host": "localhost",
         "port": 3306,
