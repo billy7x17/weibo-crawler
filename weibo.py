@@ -1086,6 +1086,7 @@ class Weibo(object):
                 "未能抓取完整转发 微博id: {id}".format(id=id)
             )
             logger.error(e)
+            logger.error(json)
             return
 
         data = json.get("data")
@@ -1140,7 +1141,10 @@ class Weibo(object):
                 if self.query and "card_group" in weibos[0]:
                     weibos = weibos[0]["card_group"]
                 else:
-                    weibos = weibos[1]["card_group"]
+                    if len(weibos) >= 2 and "card_group" in weibos[1]:
+                        weibos = weibos[1]["card_group"]
+                    else:
+                        return False
                 # 如果需要检查cookie，在循环第一个人的时候，就要看看仅自己可见的信息有没有，要是没有直接报错
                 for w in weibos:
                     if w["card_type"] == 11:
